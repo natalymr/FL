@@ -1,5 +1,3 @@
-# FL
-
 ## Настройка окружения
 ```
 apt-get install default-jre
