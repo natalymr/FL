@@ -26,10 +26,12 @@ WHILE : 'while';
 DO    :    'do';
 
 /* operators */
+POW    : '**';
 ASSIGN : '=';
 PLUS   : '+';
 MINUS  : '-';
 MULT   : '*';
+MOD    : '%';
 DIV    : '/';
 LE     : '<';
 LT     : '<=';
@@ -48,6 +50,7 @@ RBRACKET : ')';
 
 BOOL : 'true' | 'false';
 LINE_COMMENT : '//' ~'\n'* '\n' -> channel(HIDDEN) ;
+COMMENT : '/*' .*? '*/' -> channel(HIDDEN) ;
 WS : [ \r\t\n] -> skip;
 
 /* identificators */

@@ -13,9 +13,10 @@ import java.io.FileNotFoundException;
 public class TestMain {
     public static void main(String[] args) {
 
-    System.out.println("here");
+        System.out.println("here");
         try {
-            my_lexer lexer = new my_lexer(CharStreams.fromFileName(args[0]));
+            my_lexer lexer;
+            lexer = new my_lexer(CharStreams.fromFileName(args[0]));
             System.out.println("(RULES_NAME, line_number, start_position, end_position, value)");
             while (true) {
                 Token token = lexer.nextToken();

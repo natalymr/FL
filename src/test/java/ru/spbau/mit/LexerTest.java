@@ -3,7 +3,7 @@ package ru.spbau.mit;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.Token;
 import org.junit.Test;
-import ru.spbau.mit.my_lexer.my_lexer;
+import ru.spbau.mit.my_lexer.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
